@@ -4,9 +4,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
+import com.bosch.example.impl.CityImplementation;
 import com.bosch.example.impl.CollatzImplementation;
 import com.bosch.example.impl.ImaexpImplementation;
 import com.bosch.example.impl.PalindromoImplementation;
+import com.bosch.example.services.CityService;
 import com.bosch.example.services.CollatzService;
 import com.bosch.example.services.ImaexpService;
 import com.bosch.example.services.PalindromoService;
@@ -30,6 +32,12 @@ public class DependenciesConfiguration {
     @Scope("singleton")
     public CollatzService collatzService() {
         return new CollatzImplementation();
+    }
+
+    @Bean
+    @Scope("singleton")
+    public CityService cityService(){
+        return new CityImplementation();
     }
 
 }
