@@ -1,4 +1,4 @@
-package com.bosch.example.repositories;
+package com.bosch.example.repository;
 
 import java.util.List;
 

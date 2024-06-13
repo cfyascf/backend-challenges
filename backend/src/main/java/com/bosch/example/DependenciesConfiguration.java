@@ -8,6 +8,7 @@ import com.bosch.example.impl.CityImplementation;
 import com.bosch.example.impl.CollatzImplementation;
 import com.bosch.example.impl.ImaexpImplementation;
 import com.bosch.example.impl.PalindromoImplementation;
+import com.bosch.example.repository.CityRepository;
 import com.bosch.example.services.CityService;
 import com.bosch.example.services.CollatzService;
 import com.bosch.example.services.ImaexpService;
