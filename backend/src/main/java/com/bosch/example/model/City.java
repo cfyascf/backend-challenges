@@ -15,11 +15,11 @@ public class City {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "Name")
-    private String name;
-
     @Column(name = "Country")
     private String country;
+
+    @Column(name = "Name")
+    private String name;
 
     @Column(name = "State")
     private String state;

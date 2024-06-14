@@ -15,12 +15,12 @@ public class CityImplementation implements CityService
     CityRepository repo;
 
     @Override
-    public List<City> getAllCities() {
+    public List<City> findAll() {
         return repo.findAll();
     }
 
     @Override
-    public City getCityByName(String search) {
+    public City findByNameContaining(String search) {
         return repo.findByNameContaining(search);
     }
 
